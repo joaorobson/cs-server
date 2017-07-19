@@ -20,5 +20,4 @@ class DisciplineSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = models.Discipline
-        fields = ('url', 'name', 'slug', 'description', 'faculty', 'code',
-                  'since', 'syllabus', 'program', 'bibliography')
+        fields = ('faculty', 'since', 'school_id')
